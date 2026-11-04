@@ -6,6 +6,7 @@ export const PORTFOLIO_CONFIG = {
   personal: {
     name: "Antonio Barbado",
     handle: "barbadodev",
+    avatar: "/avatar.jpg",
     title: "Desarrollador Web Full-Stack",
     subtitle: "Estudiante de 2º DAW · Especializado en React, Node.js y Supabase",
     location: "Córdoba, Andalucía, España",

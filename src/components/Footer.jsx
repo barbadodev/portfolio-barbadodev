@@ -13,8 +13,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-10 border-b border-slate-900">
           
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-mono font-bold text-sm">
-              &lt;/&gt;
+            <div className="w-9 h-9 rounded-xl overflow-hidden border border-slate-700 shrink-0">
+              <img
+                src={PORTFOLIO_CONFIG.personal.avatar}
+                alt={PORTFOLIO_CONFIG.personal.name}
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <div>
               <span className="text-white font-bold text-sm block">

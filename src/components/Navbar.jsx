@@ -12,10 +12,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
-          {/* Logo Personal */}
+          {/* Logo Personal con Foto */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white font-mono font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
-              &lt;/&gt;
+            <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-slate-700 shadow-md group-hover:scale-105 transition-transform bg-slate-900 shrink-0">
+              <img
+                src={PORTFOLIO_CONFIG.personal.avatar}
+                alt={PORTFOLIO_CONFIG.personal.name}
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <div>
               <span className="text-base font-bold text-white tracking-tight flex items-center gap-2">
