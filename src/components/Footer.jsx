@@ -7,10 +7,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-950 text-slate-400 text-xs py-14 border-t border-slate-900">
+    <footer className="bg-[#090d16] text-slate-400 text-xs py-14 border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-10 border-b border-slate-900">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-10 border-b border-slate-800/60">
           
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl overflow-hidden border border-slate-700 shrink-0">
@@ -24,8 +24,8 @@ export default function Footer() {
               <span className="text-white font-bold text-sm block">
                 {PORTFOLIO_CONFIG.personal.name}
               </span>
-              <span className="text-slate-500 text-xs">
-                {PORTFOLIO_CONFIG.personal.title} · Córdoba, España
+              <span className="text-slate-400 text-xs">
+                {PORTFOLIO_CONFIG.personal.title}
               </span>
             </div>
           </div>
@@ -33,7 +33,7 @@ export default function Footer() {
           <nav className="flex items-center gap-6 text-slate-400 text-xs">
             <a href="#proyectos" className="hover:text-white transition-colors">Proyectos</a>
             <a href="#stack" className="hover:text-white transition-colors">Tecnologías</a>
-            <a href="#servicios" className="hover:text-white transition-colors">Soluciones</a>
+            <a href="#servicios" className="hover:text-white transition-colors">Disponibilidad</a>
             <a href="#contacto" className="hover:text-white transition-colors">Contacto</a>
           </nav>
 

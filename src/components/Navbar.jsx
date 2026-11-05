@@ -8,13 +8,13 @@ export default function Navbar() {
   const whatsappUrl = `https://wa.me/${PORTFOLIO_CONFIG.social.whatsapp}?text=${encodeURIComponent(PORTFOLIO_CONFIG.social.whatsappDirectMessage)}`;
 
   return (
-    <header className="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 text-slate-100">
+    <header className="sticky top-0 z-50 bg-[#090d16]/95 backdrop-blur-md border-b border-slate-800/60 text-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
           {/* Logo Personal con Foto */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-slate-700 shadow-md group-hover:scale-105 transition-transform bg-slate-900 shrink-0">
+            <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-slate-700 bg-slate-900 shrink-0">
               <img
                 src={PORTFOLIO_CONFIG.personal.avatar}
                 alt={PORTFOLIO_CONFIG.personal.name}
@@ -22,13 +22,13 @@ export default function Navbar() {
               />
             </div>
             <div>
-              <span className="text-base font-bold text-white tracking-tight flex items-center gap-2">
+              <span className="text-sm font-bold text-white tracking-tight flex items-center gap-2">
                 <span>{PORTFOLIO_CONFIG.personal.name}</span>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 font-mono">
-                  {PORTFOLIO_CONFIG.personal.handle}
+                <span className="text-[11px] text-slate-400 font-mono">
+                  @{PORTFOLIO_CONFIG.personal.handle}
                 </span>
               </span>
-              <span className="text-xs text-slate-400 block">
+              <span className="text-xs text-slate-400 block font-normal">
                 {PORTFOLIO_CONFIG.personal.title}
               </span>
             </div>
@@ -36,16 +36,16 @@ export default function Navbar() {
 
           {/* Enlaces de Escritorio */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="#proyectos" className="hover:text-blue-400 transition-colors">
+            <a href="#proyectos" className="hover:text-white transition-colors">
               Proyectos
             </a>
-            <a href="#stack" className="hover:text-blue-400 transition-colors">
+            <a href="#stack" className="hover:text-white transition-colors">
               Tecnologías
             </a>
-            <a href="#servicios" className="hover:text-blue-400 transition-colors">
-              Soluciones
+            <a href="#servicios" className="hover:text-white transition-colors">
+              Disponibilidad
             </a>
-            <a href="#contacto" className="hover:text-blue-400 transition-colors">
+            <a href="#contacto" className="hover:text-white transition-colors">
               Contacto
             </a>
           </nav>
@@ -119,7 +119,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="px-3 py-2 rounded-lg text-base font-medium hover:bg-slate-900"
             >
-              Soluciones para Empresas
+              Disponibilidad & Prácticas
             </a>
             <a
               href="#contacto"

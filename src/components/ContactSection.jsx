@@ -30,64 +30,64 @@ _Enviado desde barbadodev.com_`;
   };
 
   return (
-    <section id="contacto" className="py-24 bg-slate-950 border-t border-slate-800 text-slate-100">
+    <section id="contacto" className="py-20 bg-[#090d16] text-slate-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Columna Izquierda: Información de Contacto Directo */}
-          <div className="lg:col-span-5 space-y-7">
+          <div className="lg:col-span-5 space-y-6">
             <div>
-              <span className="text-xs font-bold tracking-widest uppercase text-emerald-400 bg-emerald-500/10 px-3.5 py-1.5 rounded-full border border-emerald-500/20">
+              <span className="text-xs font-semibold tracking-wider uppercase text-slate-400">
                 Contacto Directo
               </span>
-              <h2 className="text-3xl sm:text-5xl font-extrabold text-white mt-4 tracking-tight leading-tight">
-                ¿Hablamos sobre tu proyecto?
+              <h2 className="text-2xl sm:text-4xl font-bold text-white mt-2 tracking-tight">
+                Hablemos sin rodeos
               </h2>
-              <p className="text-base text-slate-400 mt-3 font-normal leading-relaxed">
-                Tanto si tienes una idea para tu negocio como si buscas un desarrollador con iniciativa para tu empresa en Córdoba o en remoto.
+              <p className="text-sm sm:text-base text-slate-400 mt-2 font-normal leading-relaxed">
+                Tanto para temas de prácticas de empresa (FCT) como si tienes un comercio en Córdoba y necesitas una web sencilla y rápida, escríbeme con total tranquilidad.
               </p>
             </div>
 
-            <div className="space-y-4 pt-2">
+            <div className="space-y-3 pt-2">
               <a
                 href={`https://wa.me/${PORTFOLIO_CONFIG.social.whatsapp}?text=${encodeURIComponent(PORTFOLIO_CONFIG.social.whatsappDirectMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-500/50 transition-colors group"
+                className="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-colors group"
               >
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/20">
-                  <MessageCircle className="w-5 h-5" />
+                <div className="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/20">
+                  <MessageCircle className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">WhatsApp Inmediato</h4>
+                  <h4 className="text-xs font-bold text-slate-400">WhatsApp</h4>
                   <p className="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
-                    Respondo habitualmente en menos de 1 hora
+                    {PORTFOLIO_CONFIG.social.whatsapp.replace('34', '+34 ')}
                   </p>
                 </div>
               </a>
 
               <a
                 href={`mailto:${PORTFOLIO_CONFIG.social.email}`}
-                className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-colors group"
+                className="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-colors group"
               >
-                <div className="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 border border-blue-500/20">
-                  <Mail className="w-5 h-5" />
+                <div className="w-9 h-9 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 border border-blue-500/20">
+                  <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Correo Electrónico</h4>
+                  <h4 className="text-xs font-bold text-slate-400">Correo Electrónico</h4>
                   <p className="text-sm font-semibold text-white group-hover:text-blue-400 transition-colors">
                     {PORTFOLIO_CONFIG.social.email}
                   </p>
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
-                <div className="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/20">
-                  <MapPin className="w-5 h-5" />
+              <div className="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                <div className="w-9 h-9 rounded-lg bg-slate-800 text-slate-300 flex items-center justify-center shrink-0">
+                  <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Ubicación</h4>
+                  <h4 className="text-xs font-bold text-slate-400">Localización</h4>
                   <p className="text-sm font-semibold text-white">
                     {PORTFOLIO_CONFIG.personal.location}
                   </p>

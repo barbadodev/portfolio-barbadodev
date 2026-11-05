@@ -1,164 +1,143 @@
 import React from 'react';
 import { PORTFOLIO_CONFIG } from '../portfolio.config';
-import { ArrowDown, MessageCircle, MapPin, Sparkles, Terminal, CheckCircle2 } from 'lucide-react';
+import { ArrowDown, MessageCircle, MapPin, GraduationCap, Sparkles, CheckCircle2 } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
 export default function Hero() {
   const whatsappUrl = `https://wa.me/${PORTFOLIO_CONFIG.social.whatsapp}?text=${encodeURIComponent(PORTFOLIO_CONFIG.social.whatsappDirectMessage)}`;
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-slate-950 text-slate-100">
-      {/* Luces y degradados de fondo */}
-      <div className="absolute top-0 right-1/4 -mt-20 w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 -mb-20 w-[500px] h-[500px] rounded-full bg-indigo-600/10 blur-[130px] pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section className="relative pt-12 pb-20 lg:pt-20 lg:pb-28 bg-[#090d16] text-slate-100 border-b border-slate-800/60">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           
-          {/* Columna Izquierda: Introducción y Propuesta */}
-          <div className="lg:col-span-8 space-y-7 text-center lg:text-left">
+          {/* Columna Izquierda: Presentación Personal Directa */}
+          <div className="lg:col-span-7 space-y-7 text-left">
             
-            {/* Foto de perfil + Badge de Disponibilidad */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <div className="relative group shrink-0">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-slate-700 shadow-xl ring-4 ring-blue-500/20 group-hover:ring-blue-500/40 transition-all bg-slate-900">
-                  <img
-                    src={PORTFOLIO_CONFIG.personal.avatar}
-                    alt={PORTFOLIO_CONFIG.personal.name}
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                <span className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-slate-950 border-2 border-slate-800 flex items-center justify-center">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                </span>
+            {/* Foto + Estado */}
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900 shrink-0 shadow-sm">
+                <img
+                  src={PORTFOLIO_CONFIG.personal.avatar}
+                  alt={PORTFOLIO_CONFIG.personal.name}
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
 
-              <div className="space-y-1.5 text-center sm:text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-                  </span>
-                  <span className="text-slate-300">{PORTFOLIO_CONFIG.personal.statusBadge}</span>
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                  <span>{PORTFOLIO_CONFIG.personal.statusBadge}</span>
                 </div>
-                <div className="flex items-center justify-center sm:justify-start gap-1 text-xs text-slate-400">
-                  <MapPin className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                <div className="flex items-center gap-1.5 text-xs text-slate-400 mt-1">
+                  <MapPin className="w-3.5 h-3.5 text-slate-400" />
                   <span>{PORTFOLIO_CONFIG.personal.location}</span>
                 </div>
               </div>
             </div>
 
-            {/* Título Principal */}
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-              Estudiante de 2º DAW con pasión por la <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-emerald-400 bg-clip-text text-transparent">Inteligencia Artificial</span> y el software real.
+            {/* Titular Principal sin estridencias */}
+            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+              Desarrollo web práctico, estudiante de 2º DAW en Córdoba y apasionado de la Inteligencia Artificial.
             </h1>
 
-            {/* Biografía Técnica */}
-            <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Hola, soy <span className="text-white font-semibold">{PORTFOLIO_CONFIG.personal.name}</span>. Tengo una base técnica sólida aprendida en DAW y muchas ganas de aprender cada día. No vendo humo: me apasiona la Inteligencia Artificial y la utilizo como multiplicador para programar mejor, investigar rápido y construir soluciones prácticas.
+            {/* Biografía Honesta */}
+            <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
+              Hola, soy <span className="text-white font-semibold">{PORTFOLIO_CONFIG.personal.name}</span>. 
+              {` ${PORTFOLIO_CONFIG.personal.bio}`}
             </p>
 
-            {/* Botones de Conversión */}
-            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <a
-                href="#proyectos"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/25 transition-all hover:-translate-y-0.5 active:translate-y-0"
-              >
-                <span>Ver Proyectos Prácticos</span>
-                <ArrowDown className="w-4 h-4" />
-              </a>
-
+            {/* Botones de Acción */}
+            <div className="pt-2 flex flex-wrap items-center gap-3">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-500 rounded-xl shadow-md shadow-emerald-600/20 transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-500 rounded-xl transition-colors shadow-sm"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Hablar por WhatsApp</span>
+                <span>Escríbeme por WhatsApp</span>
               </a>
 
               <a
                 href={PORTFOLIO_CONFIG.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-slate-300 hover:text-white bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-xl transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-slate-300 hover:text-white bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-xl transition-colors"
               >
                 <GithubIcon className="w-4 h-4" />
                 <span>GitHub</span>
               </a>
+
+              <a
+                href="#proyectos"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-slate-400 hover:text-white transition-colors"
+              >
+                <span>Ver Proyectos</span>
+                <ArrowDown className="w-4 h-4" />
+              </a>
             </div>
 
-            {/* Métricas / Garantías de Trabajo */}
-            <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400 font-medium">
+            {/* Puntos clave */}
+            <div className="pt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-400">
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                Estudiante de 2º DAW en Córdoba
+                <CheckCircle2 className="w-3.5 h-3.5 text-slate-300" />
+                Código 100% propio y funcional
               </span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-blue-400" />
-                Ganas continuas de aprender
+                <CheckCircle2 className="w-3.5 h-3.5 text-slate-300" />
+                Ganas constantes de aprender
               </span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-indigo-400" />
-                Flujos de trabajo con Inteligencia Artificial
+                <CheckCircle2 className="w-3.5 h-3.5 text-slate-300" />
+                Flujos de trabajo ágiles con IA
               </span>
             </div>
 
           </div>
 
-          {/* Columna Derecha: Tarjeta de Perfil & Terminal */}
-          <div className="lg:col-span-4">
-            <div className="rounded-3xl border border-slate-800 bg-slate-900/90 shadow-2xl p-6 relative backdrop-blur-sm space-y-4">
+          {/* Columna Derecha: Tarjeta Personal Auténtica (Sin falsas terminales) */}
+          <div className="lg:col-span-5">
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6 space-y-5 text-left">
               
-              {/* Encabezado con foto y datos de contacto */}
-              <div className="flex items-center gap-3.5 pb-4 border-b border-slate-800">
-                <div className="w-12 h-12 rounded-xl overflow-hidden border border-slate-700 shrink-0 shadow-md">
-                  <img
-                    src={PORTFOLIO_CONFIG.personal.avatar}
-                    alt={PORTFOLIO_CONFIG.personal.name}
-                    className="w-full h-full object-cover object-top"
-                  />
+              <div className="flex items-center justify-between pb-4 border-b border-slate-800">
+                <div className="flex items-center gap-2.5">
+                  <GraduationCap className="w-5 h-5 text-blue-400" />
+                  <span className="text-sm font-semibold text-white">Mi Perfil & Situación Actual</span>
                 </div>
+                <span className="text-xs text-slate-400 font-mono">2026/2027</span>
+              </div>
+
+              <div className="space-y-4 text-xs sm:text-sm">
                 <div>
-                  <h3 className="font-bold text-white text-sm">{PORTFOLIO_CONFIG.personal.name}</h3>
-                  <span className="text-xs text-blue-400 font-mono">@{PORTFOLIO_CONFIG.personal.handle}</span>
-                  <span className="text-[11px] text-slate-400 block">Estudiante 2º DAW · Córdoba</span>
+                  <span className="text-slate-400 block text-xs uppercase tracking-wider font-semibold">Formación Oficial</span>
+                  <p className="text-slate-200 mt-0.5 font-medium">{PORTFOLIO_CONFIG.aboutCard.education}</p>
+                </div>
+
+                <div>
+                  <span className="text-slate-400 block text-xs uppercase tracking-wider font-semibold">Ubicación</span>
+                  <p className="text-slate-200 mt-0.5">{PORTFOLIO_CONFIG.aboutCard.city}</p>
+                </div>
+
+                <div>
+                  <span className="text-slate-400 block text-xs uppercase tracking-wider font-semibold">Fundamentos Técnicos</span>
+                  <p className="text-slate-200 mt-0.5">{PORTFOLIO_CONFIG.aboutCard.focus}</p>
+                </div>
+
+                <div>
+                  <span className="text-slate-400 block text-xs uppercase tracking-wider font-semibold">Mi Enfoque con la Inteligencia Artificial</span>
+                  <p className="text-slate-200 mt-0.5">{PORTFOLIO_CONFIG.aboutCard.aiApproach}</p>
+                </div>
+
+                <div>
+                  <span className="text-slate-400 block text-xs uppercase tracking-wider font-semibold">Disponibilidad</span>
+                  <p className="text-emerald-400 mt-0.5 font-medium">{PORTFOLIO_CONFIG.aboutCard.availability}</p>
                 </div>
               </div>
 
-              {/* Ventana de Terminal */}
-              <div className="rounded-xl bg-slate-950 p-4 border border-slate-800/80 font-mono text-xs text-slate-300 space-y-3">
-                <div className="flex items-center justify-between text-slate-500 pb-2 border-b border-slate-800/60">
-                  <div className="flex items-center gap-1.5">
-                    <Terminal className="w-3.5 h-3.5 text-blue-400" />
-                    <span>profile.sh</span>
-                  </div>
-                  <div className="flex gap-1">
-                    <span className="w-2 h-2 rounded-full bg-rose-500/80" />
-                    <span className="w-2 h-2 rounded-full bg-amber-500/80" />
-                    <span className="w-2 h-2 rounded-full bg-emerald-500/80" />
-                  </div>
-                </div>
-
-                <div>
-                  <span className="text-emerald-400">$</span> <span className="text-slate-200">cat profile.json</span>
-                </div>
-                <pre className="text-slate-400 leading-relaxed overflow-x-auto text-[11px]">
-{`{
-  "student": "Antonio Barbado",
-  "location": "Córdoba, España",
-  "education": "2º DAW (Desarrollo Web)",
-  "mindset": "Fast learner & Ganas de aprender",
-  "ai_passion": "Asistentes de IA & Automatización",
-  "foundation": ["JavaScript", "React", "Node.js", "SQL", "Git"],
-  "goal": "Prácticas de empresa & Proyectos reales"
-}`}
-                </pre>
-                <div className="pt-2 text-slate-500 text-[10px] flex items-center justify-between border-t border-slate-800/60">
-                  <span>Git: main* [clean]</span>
-                  <span className="text-emerald-400 font-bold">READY TO LEARN & BUILD</span>
-                </div>
+              <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <span>📍 Córdoba, España</span>
+                <span className="text-slate-300 font-mono">@barbadodev</span>
               </div>
 
             </div>
