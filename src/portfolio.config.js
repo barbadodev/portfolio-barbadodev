@@ -17,7 +17,7 @@ export const PORTFOLIO_CONFIG = {
   social: {
     github: "https://github.com/barbadodev",
     linkedin: "https://linkedin.com/in/barbadodev",
-    email: "antoniobarbadodev@gmail.com",
+    email: "contacto.barbadodev@gmail.com",
     whatsapp: "34600123456", // Reemplazar con tu número real
     whatsappDirectMessage: "Hola Antonio, he visto tu portfolio y me gustaría hablar contigo sobre un proyecto web.",
   },
