@@ -18,7 +18,7 @@ export default function Navbar() {
               <img
                 src={PORTFOLIO_CONFIG.personal.avatar}
                 alt={PORTFOLIO_CONFIG.personal.name}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             <div>

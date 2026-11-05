@@ -2,11 +2,13 @@
 // CONFIGURACIÓN PERSONAL DEL PORTFOLIO (barbadodev)
 // ==============================================================================
 
+import avatarImg from './assets/avatar.jpg';
+
 export const PORTFOLIO_CONFIG = {
   personal: {
     name: "Antonio Barbado",
     handle: "barbadodev",
-    avatar: "/avatar.jpg",
+    avatar: avatarImg,
     title: "Estudiante de 2º DAW · Córdoba",
     subtitle: "Desarrollo web práctico y experimentación activa con Inteligencia Artificial",
     location: "Córdoba, España",
