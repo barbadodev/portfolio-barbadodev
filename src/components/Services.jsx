@@ -10,13 +10,13 @@ export default function Services() {
         {/* Cabecera */}
         <div className="max-w-2xl text-left mb-14">
           <span className="text-xs font-semibold tracking-wider uppercase text-slate-400">
-            Disponibilidad & Enfoque
+            Servicios & Soluciones
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold text-white mt-2 tracking-tight">
-            ¿En qué puedo colaborar ahora mismo?
+            ¿En qué puedo ayudarte?
           </h2>
           <p className="text-sm sm:text-base text-slate-400 mt-2 font-normal leading-relaxed">
-            Abierto tanto a incorporarme a un equipo para mis prácticas del ciclo formativo como a ayudar a autónomos de mi ciudad.
+            Soluciones web prácticas, modernas y directas pensadas para negocios locales de Córdoba y proyectos a medida.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function Services() {
               </div>
 
               <div className="pt-4 border-t border-slate-800/80 text-xs text-slate-400">
-                {index === 0 ? "📍 Modalidad presencial en Córdoba o híbrido/remoto" : "📍 Trato cercano y directo en Córdoba"}
+                {item.detail}
               </div>
             </div>
           ))}

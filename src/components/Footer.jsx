@@ -33,7 +33,7 @@ export default function Footer() {
           <nav className="flex items-center gap-6 text-slate-400 text-xs">
             <a href="#proyectos" className="hover:text-white transition-colors">Proyectos</a>
             <a href="#stack" className="hover:text-white transition-colors">Tecnologías</a>
-            <a href="#servicios" className="hover:text-white transition-colors">Disponibilidad</a>
+            <a href="#servicios" className="hover:text-white transition-colors">Servicios</a>
             <a href="#contacto" className="hover:text-white transition-colors">Contacto</a>
           </nav>
 

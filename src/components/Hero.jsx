@@ -125,6 +125,11 @@ export default function Hero() {
                 </div>
 
                 <div>
+                  <span className="text-slate-400 block text-xs uppercase tracking-wider font-semibold">Experiencia Práctica</span>
+                  <p className="text-slate-200 mt-0.5">{PORTFOLIO_CONFIG.aboutCard.experience}</p>
+                </div>
+
+                <div>
                   <span className="text-slate-400 block text-xs uppercase tracking-wider font-semibold">Mi Enfoque con la Inteligencia Artificial</span>
                   <p className="text-slate-200 mt-0.5">{PORTFOLIO_CONFIG.aboutCard.aiApproach}</p>
                 </div>

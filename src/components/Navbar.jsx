@@ -43,7 +43,7 @@ export default function Navbar() {
               Tecnologías
             </a>
             <a href="#servicios" className="hover:text-white transition-colors">
-              Disponibilidad
+              Servicios
             </a>
             <a href="#contacto" className="hover:text-white transition-colors">
               Contacto
@@ -119,7 +119,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="px-3 py-2 rounded-lg text-base font-medium hover:bg-slate-900"
             >
-              Disponibilidad & Prácticas
+              Servicios
             </a>
             <a
               href="#contacto"

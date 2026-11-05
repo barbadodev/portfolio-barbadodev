@@ -10,16 +10,17 @@ export const PORTFOLIO_CONFIG = {
     title: "Estudiante de 2º DAW · Córdoba",
     subtitle: "Desarrollo web práctico y experimentación activa con Inteligencia Artificial",
     location: "Córdoba, España",
-    statusBadge: "Buscando prácticas de empresa (FCT) & Proyectos",
-    bio: "Estoy terminando 2º de Desarrollo de Aplicaciones Web (DAW) en Córdoba. No pretendo hacerme pasar por senior ni inventarme años de experiencia que no tengo: lo que sí tengo es una base técnica sólida de clase, mucha curiosidad y ganas de trabajar. La Inteligencia Artificial me apasiona y la utilizo a diario para programar mejor, entender conceptos difíciles y ser mucho más ágil construyendo cosas que funcionen.",
+    statusBadge: "Estudiante 2º DAW · Prácticas en COSEBA",
+    bio: "Estoy cursando 2º de Desarrollo de Aplicaciones Web (DAW) en Córdoba y realizando mis prácticas en COSEBA. Me apasiona construir soluciones útiles para la web y exprimir la Inteligencia Artificial a diario como herramienta para investigar, aprender rápido y crear código limpio y funcional.",
   },
 
   aboutCard: {
     education: "2º curso de Desarrollo de Aplicaciones Web (DAW)",
-    city: "Córdoba, Andalucía",
+    experience: "Prácticas de DAW en COSEBA (Córdoba)",
+    city: "Córdoba, Andalucía, España",
     focus: "Frontend con React, backend con Node.js y bases de datos SQL",
     aiApproach: "Uso diario de modelos de IA para acelerar aprendizaje y desarrollo",
-    availability: "Disponible para prácticas de empresa (FCT) e iniciativas locales"
+    availability: "Desarrollo web y digitalización para comercios locales"
   },
 
   social: {
@@ -27,7 +28,7 @@ export const PORTFOLIO_CONFIG = {
     linkedin: null,
     email: "contacto.barbadodev@gmail.com",
     whatsapp: "34689413922",
-    whatsappDirectMessage: "Hola Antonio, he visto tu portfolio y me gustaría hablar contigo.",
+    whatsappDirectMessage: "Hola Antonio, he visto tu portfolio y me gustaría hablar contigo sobre un proyecto web.",
   },
 
   techStackCategories: [
@@ -86,14 +87,16 @@ export const PORTFOLIO_CONFIG = {
 
   collaboration: [
     {
-      title: "Para Empresas: Prácticas FCT",
-      description: "Busco una empresa donde realizar mis prácticas obligatorias de 2º de DAW. Ofrezco puntualidad, actitud proactiva, ganas constantes de aprender y soltura con herramientas modernas.",
-      badge: "Formación en Centros de Trabajo"
+      title: "Digitalización para Negocios Locales en Córdoba",
+      description: "Si tienes un comercio, taller o restaurante en Córdoba y necesitas una web limpia que cargue rápido en móviles y te traiga clientes a WhatsApp sin pagar cuotas abusivas.",
+      badge: "Negocios Locales & PYMEs",
+      detail: "📍 Trato cercano y directo en Córdoba"
     },
     {
-      title: "Para Negocios Locales en Córdoba",
-      description: "Si tienes un comercio, taller o restaurante en Córdoba y necesitas una web limpia que cargue rápido en móviles y te traiga clientes a WhatsApp sin pagar cuotas abusivas.",
-      badge: "Digitalización Local"
+      title: "Desarrollo Web & Aplicaciones a Medida",
+      description: "Construcción de interfaces interactivas con React, desarrollo de APIs con Node.js y diseño de bases de datos relacionales para proyectos concretos.",
+      badge: "Frontend & Backend",
+      detail: "⚡ Código limpio, modular y mantenible"
     }
   ]
 };

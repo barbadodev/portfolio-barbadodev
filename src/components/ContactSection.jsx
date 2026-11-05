@@ -42,10 +42,10 @@ _Enviado desde barbadodev.com_`;
                 Contacto Directo
               </span>
               <h2 className="text-2xl sm:text-4xl font-bold text-white mt-2 tracking-tight">
-                Hablemos sin rodeos
+                Contáctame aquí
               </h2>
               <p className="text-sm sm:text-base text-slate-400 mt-2 font-normal leading-relaxed">
-                Tanto para temas de prácticas de empresa (FCT) como si tienes un comercio en Córdoba y necesitas una web sencilla y rápida, escríbeme con total tranquilidad.
+                Si tienes un negocio en Córdoba y necesitas una web moderna, rápida y que te traiga clientes directamente por WhatsApp, escríbeme con total tranquilidad.
               </p>
             </div>
 
@@ -142,7 +142,7 @@ _Enviado desde barbadodev.com_`;
                   >
                     <option value="Crear una web o aplicación para mi negocio">Crear una web o aplicación para mi negocio</option>
                     <option value="Digitalizar carta/reservas para hostelería">Digitalizar carta / reservas para hostelería</option>
-                    <option value="Oportunidad de empleo / Prácticas DAW">Oportunidad de empleo o prácticas de DAW</option>
+                    <option value="Presupuesto o consulta para mi negocio">Presupuesto o consulta para mi negocio</option>
                     <option value="Colaboración o desarrollo a medida">Colaboración o desarrollo a medida</option>
                   </select>
                 </div>
