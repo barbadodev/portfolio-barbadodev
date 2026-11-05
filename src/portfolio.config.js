@@ -10,13 +10,13 @@ export const PORTFOLIO_CONFIG = {
     title: "Estudiante de 2º DAW · Córdoba",
     subtitle: "Desarrollo web práctico y experimentación activa con Inteligencia Artificial",
     location: "Córdoba, España",
-    statusBadge: "Estudiante 2º DAW · Prácticas en COSEBA",
-    bio: "Estoy cursando 2º de Desarrollo de Aplicaciones Web (DAW) en Córdoba y realizando mis prácticas en COSEBA. Me apasiona construir soluciones útiles para la web y exprimir la Inteligencia Artificial a diario como herramienta para investigar, aprender rápido y crear código limpio y funcional.",
+    statusBadge: "Estudiante 2º DAW · Experiencia en ABP Tecnológica",
+    bio: "Estoy cursando 2º de Desarrollo de Aplicaciones Web (DAW) en Córdoba y he realizado mis prácticas en ABP Tecnológica. Me apasiona construir soluciones útiles para la web y exprimir la Inteligencia Artificial a diario como herramienta para investigar, aprender rápido y crear código limpio y funcional.",
   },
 
   aboutCard: {
     education: "2º curso de Desarrollo de Aplicaciones Web (DAW)",
-    experience: "Prácticas de DAW en COSEBA (Córdoba)",
+    experience: "Prácticas realizadas en ABP Tecnológica (Córdoba)",
     city: "Córdoba, Andalucía, España",
     focus: "Frontend con React, backend con Node.js y bases de datos SQL",
     aiApproach: "Uso diario de modelos de IA para acelerar aprendizaje y desarrollo",
