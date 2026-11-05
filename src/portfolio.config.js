@@ -70,7 +70,7 @@ export const PORTFOLIO_CONFIG = {
       scopeNote: "Esta web es una versión base demostrativa que muestra el punto de partida técnico. Se adapta completamente al gusto del cliente: logotipo, carta completa, platos del día, tipografía, estilo visual y pasarela de pago o reservas.",
       tech: ["React 18", "Vite", "Tailwind CSS", "WhatsApp Direct"],
       github: "https://github.com/barbadodev/starter-restaurante",
-      demo: "#",
+      demo: "https://starter-restaurante.onrender.com",
       tag: "Base Demostrativa · 100% Personalizable"
     },
     {
@@ -82,7 +82,7 @@ export const PORTFOLIO_CONFIG = {
       scopeNote: "Plantilla base de partida para ilustrar la captación directa por WhatsApp y velocidad de carga. Para cada negocio se construye una estructura a medida con sus servicios específicos, equipo, tarifas e integraciones personalizadas.",
       tech: ["React 18", "Vite", "Tailwind CSS", "SEO Local"],
       github: "https://github.com/barbadodev/starter-pyme",
-      demo: "#",
+      demo: "https://starter-pyme.onrender.com",
       tag: "Base Demostrativa · 100% Personalizable"
     }
   ],
