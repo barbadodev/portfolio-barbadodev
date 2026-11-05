@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabecera de Sección */}
-        <div className="max-w-2xl text-left mb-14">
+        <div className="max-w-2xl text-left mb-10">
           <span className="text-xs font-semibold tracking-wider uppercase text-slate-400">
             Trabajo Práctico
           </span>
@@ -19,6 +19,22 @@ export default function Projects() {
           <p className="text-sm sm:text-base text-slate-400 mt-2 font-normal leading-relaxed">
             Nada de clones ficticios o tutoriales a medias. Cada desarrollo responde a una necesidad real, con código probado y funcionando.
           </p>
+        </div>
+
+        {/* Aclaración Profesional sobre Demostraciones para Negocios */}
+        <div className="mb-10 p-5 rounded-2xl bg-slate-900/70 border border-slate-800 text-slate-300 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm">
+            <span className="font-bold text-white flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-400" />
+              Aclaración para empresas sobre las propuestas comerciales:
+            </span>
+            <p className="text-slate-400 leading-relaxed">
+              Las aplicaciones de hostelería y comercios mostradas abajo son <strong>versiones base demostrativas</strong> que enseñan el nivel más básico de partida. Cada proyecto real se diseña, estructura y programa <strong>100% a medida</strong> según la identidad, necesidades y operativa de cada empresa.
+            </p>
+          </div>
+          <span className="shrink-0 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700/80 text-center">
+            Desarrollo 100% a su gusto
+          </span>
         </div>
 
         {/* Listado Editorial de Proyectos */}
@@ -55,6 +71,18 @@ export default function Projects() {
                       {project.solution}
                     </p>
                   </div>
+
+                  {/* Nota sobre personalización si existe */}
+                  {project.scopeNote && (
+                    <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-xs text-slate-300 space-y-1">
+                      <span className="text-slate-400 font-bold block uppercase tracking-wider text-[10px]">
+                        Nivel de Personalización:
+                      </span>
+                      <p className="leading-relaxed text-slate-300">
+                        {project.scopeNote}
+                      </p>
+                    </div>
+                  )}
 
                   {/* Etiquetas de Tecnologías */}
                   <div className="flex flex-wrap gap-2 pt-2">

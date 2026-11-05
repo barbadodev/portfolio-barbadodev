@@ -45,7 +45,7 @@ _Enviado desde barbadodev.com_`;
                 Contáctame aquí
               </h2>
               <p className="text-sm sm:text-base text-slate-400 mt-2 font-normal leading-relaxed">
-                Si tienes un negocio en Córdoba y necesitas una web moderna, rápida y que te traiga clientes directamente por WhatsApp, escríbeme con total tranquilidad.
+                Trabajo con seriedad, transparencia y comunicación directa. Si tienes un negocio en Córdoba y buscas una web a medida con un desarrollo profesional bien estructurado, cuéntame tu caso y te respondo con una valoración clara.
               </p>
             </div>
 

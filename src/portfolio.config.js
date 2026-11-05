@@ -64,24 +64,26 @@ export const PORTFOLIO_CONFIG = {
     {
       id: "starter-restaurante",
       title: "Carta Digital & Reservas",
-      subtitle: "Solución para hostelería local",
+      subtitle: "Demostración base para hostelería",
       problem: "Muchos bares y tabernas tradicionales en Córdoba tienen como carta una foto borrosa en Facebook o pagan comisiones altas a plataformas externas.",
       solution: "Diseñé una carta interactiva con el etiquetado obligatorio de alérgenos europeos, detección en directo del turno de cocina y reservas directas al WhatsApp del negocio sin intermediarios.",
+      scopeNote: "Esta web es una versión base demostrativa que muestra el punto de partida técnico. Se adapta completamente al gusto del cliente: logotipo, carta completa, platos del día, tipografía, estilo visual y pasarela de pago o reservas.",
       tech: ["React 18", "Vite", "Tailwind CSS", "WhatsApp Direct"],
       github: "https://github.com/barbadodev/starter-restaurante",
       demo: "#",
-      tag: "Propuesta para Negocios"
+      tag: "Base Demostrativa · 100% Personalizable"
     },
     {
       id: "starter-pyme",
       title: "Web Comercial para Clínicas",
-      subtitle: "Portal de captación para comercios",
+      subtitle: "Demostración base para negocios locales",
       problem: "Las pymes locales pierden clientes si su web no carga rápido en móviles o no deja pedir cita al instante.",
       solution: "Un portal ligero con cálculo automático de 'Abierto ahora', reseñas de Google integradas y botón directo para solicitar presupuesto por WhatsApp.",
+      scopeNote: "Plantilla base de partida para ilustrar la captación directa por WhatsApp y velocidad de carga. Para cada negocio se construye una estructura a medida con sus servicios específicos, equipo, tarifas e integraciones personalizadas.",
       tech: ["React 18", "Vite", "Tailwind CSS", "SEO Local"],
       github: "https://github.com/barbadodev/starter-pyme",
       demo: "#",
-      tag: "Propuesta para Negocios"
+      tag: "Base Demostrativa · 100% Personalizable"
     }
   ],
 
