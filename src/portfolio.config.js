@@ -7,11 +7,11 @@ export const PORTFOLIO_CONFIG = {
     name: "Antonio Barbado",
     handle: "barbadodev",
     avatar: "/avatar.jpg",
-    title: "Desarrollador Web Full-Stack",
-    subtitle: "Estudiante de 2º DAW · Especializado en React, Node.js y Supabase",
+    title: "Estudiante de 2º DAW & Desarrollador Web",
+    subtitle: "2º curso de Desarrollo de Aplicaciones Web en Córdoba · Apasionado de la Inteligencia Artificial y el software práctico",
     location: "Córdoba, Andalucía, España",
-    statusBadge: "Disponible para proyectos & prácticas",
-    bio: "Creo aplicaciones web modernas, rápidas y orientadas a resultados reales. Combino arquitecturas limpias y seguras en el backend (Node.js, Express, PostgreSQL/Supabase) con interfaces ágiles y atractivas en el frontend (React, Vite, Tailwind CSS). Me apasiona el código bien estructurado, la automatización y la optimización de rendimiento.",
+    statusBadge: "Buscando prácticas de empresa & proyectos",
+    bio: "Soy estudiante de 2º año de DAW en Córdoba. No pretendo vender humo ni hacerme pasar por senior: cuento con una base técnica sólida aprendida en clase, una enorme curiosidad y muchas ganas de aprender cada día. Me apasiona el impacto de la Inteligencia Artificial en la programación y la utilizo a diario para acelerar mi aprendizaje, investigar documentación y resolver problemas con agilidad. Busco una oportunidad para aportar valor desde el primer minuto en mis prácticas de empresa o colaborando en proyectos reales.",
   },
 
   social: {
@@ -19,35 +19,35 @@ export const PORTFOLIO_CONFIG = {
     linkedin: null,
     email: "contacto.barbadodev@gmail.com",
     whatsapp: "34689413922",
-    whatsappDirectMessage: "Hola Antonio, he visto tu portfolio y me gustaría hablar contigo sobre un proyecto web.",
+    whatsappDirectMessage: "Hola Antonio, he visto tu portfolio y me gustaría hablar contigo sobre una oportunidad o proyecto.",
   },
 
   techStack: {
     frontend: [
-      { name: "React 18 / 19", level: "Avanzado", icon: "Atom" },
-      { name: "Vite", level: "Avanzado", icon: "Zap" },
-      { name: "Tailwind CSS", level: "Avanzado", icon: "Palette" },
-      { name: "JavaScript (ES6+)", level: "Avanzado", icon: "Code2" },
-      { name: "PWA (Service Workers)", level: "Intermedio", icon: "Smartphone" },
-      { name: "HTML5 / CSS3 Semántico", level: "Avanzado", icon: "Layout" },
+      { name: "JavaScript (ES6+)", level: "Fundamentos sólidos de DAW", icon: "Code2" },
+      { name: "React 18 / 19", level: "Base práctica en proyectos", icon: "Atom" },
+      { name: "HTML5 & CSS3 Semántico", level: "Estructura & accesibilidad", icon: "Layout" },
+      { name: "Tailwind CSS", level: "Diseño ágil y responsive", icon: "Palette" },
+      { name: "Vite", level: "Entorno de desarrollo rápido", icon: "Zap" },
+      { name: "PWA (Service Workers)", level: "Nociones aplicadas en proyectos", icon: "Smartphone" },
     ],
     backend: [
-      { name: "Node.js (ESM)", level: "Avanzado", icon: "Server" },
-      { name: "Express.js", level: "Avanzado", icon: "Cpu" },
-      { name: "RESTful APIs", level: "Avanzado", icon: "Network" },
-      { name: "Autenticación JWT / RLS", level: "Intermedio", icon: "ShieldCheck" },
-      { name: "Sincronización iCal / Cron", level: "Intermedio", icon: "Calendar" },
+      { name: "Node.js (ESM)", level: "Base de servidor y runtime", icon: "Server" },
+      { name: "Express.js", level: "Creación de endpoints REST", icon: "Cpu" },
+      { name: "APIs RESTful", level: "Consumo y diseño de rutas", icon: "Network" },
+      { name: "Autenticación & JWT", level: "Conceptos aprendidos en DAW", icon: "ShieldCheck" },
+      { name: "Sincronización iCal", level: "Integración con Moodle", icon: "Calendar" },
     ],
     database: [
-      { name: "PostgreSQL", level: "Intermedio", icon: "Database" },
-      { name: "Supabase (Auth, DB, Realtime)", level: "Avanzado", icon: "Flame" },
-      { name: "SQL & Migraciones", level: "Intermedio", icon: "Layers" },
+      { name: "SQL & Relaciones", level: "Diseño y consultas de DAW", icon: "Layers" },
+      { name: "PostgreSQL", level: "Modelo relacional", icon: "Database" },
+      { name: "Supabase", level: "BaaS, Auth y base de datos", icon: "Flame" },
     ],
     tools: [
-      { name: "Git & GitHub", level: "Avanzado", icon: "GitBranch" },
-      { name: "Vercel & Render", level: "Avanzado", icon: "Cloud" },
-      { name: "PowerShell & Linux CLI", level: "Intermedio", icon: "Terminal" },
-      { name: "Workflows con IA Asistida", level: "Avanzado", icon: "Bot" },
+      { name: "Inteligencia Artificial Asistida", level: "Pasión activa & uso diario", icon: "Bot" },
+      { name: "Git & GitHub", level: "Control de versiones habitual", icon: "GitBranch" },
+      { name: "Vercel & Despliegues", level: "Puesta en producción web", icon: "Cloud" },
+      { name: "PowerShell & Terminal", level: "Manejo de entorno local", icon: "Terminal" },
     ]
   },
 
@@ -55,14 +55,14 @@ export const PORTFOLIO_CONFIG = {
     {
       id: "calendario-daw",
       title: "Calendario DAW — Plataforma Académica Colaborativa",
-      badge: "Proyecto Destacado",
+      badge: "Proyecto de Clase Real",
       type: "Full-Stack Web App & PWA",
-      description: "Plataforma web en producción para estudiantes de 2º DAW. Cuenta con sincronización automática de entregas y exámenes con Moodle cada 15 minutos mediante node-ical, soporte PWA para instalación nativa en móviles, notificaciones Web Push y base de datos relacional en Supabase.",
-      tech: ["React 18", "Node.js", "Express", "Supabase", "PostgreSQL", "PWA", "Tailwind CSS", "Web Push"],
+      description: "Plataforma web construida para resolver un problema real de mis compañeros de 2º DAW: centralizar entregas y exámenes. Conecta automáticamente con el calendario Moodle cada 15 minutos, permite instalación como PWA en móviles y guarda datos en Supabase/PostgreSQL.",
+      tech: ["React 18", "Node.js", "Express", "Supabase", "PostgreSQL", "PWA", "Tailwind CSS"],
       highlights: [
-        "Sincronización automatizada con Moodle cada 15 min",
-        "PWA instalable offline con Service Worker nativo",
-        "Control de eventos y tablón de notas por módulo"
+        "Sincronización automática de tareas con Moodle",
+        "PWA instalable offline en teléfonos móviles",
+        "Diseñado para uso diario real entre estudiantes"
       ],
       github: "https://github.com/barbadodev/calendario-daw",
       demo: "#",
@@ -71,15 +71,15 @@ export const PORTFOLIO_CONFIG = {
     },
     {
       id: "starter-restaurante",
-      title: "Los Patios — Carta Digital & Sistema de Reservas",
-      badge: "Solución para Hostelería",
+      title: "Los Patios — Carta Digital & Reservas Directas",
+      badge: "Iniciativa para Negocios",
       type: "Aplicación Web Gastronómica",
-      description: "Solución comercial para restaurantes y tabernas que sustituye los PDFs pesados por una carta digital interactiva con filtros de alérgenos (normativa UE), detector en tiempo real de apertura de cocina y reservas de mesa directas a WhatsApp sin comisiones.",
+      description: "Propuesta práctica orientada a la hostelería cordobesa. Sustituye las fotos borrosas de cartas por un menú digital adaptado a móviles con indicación obligatoria de alérgenos (normativa UE) y reservas directas por WhatsApp sin pagar comisiones a plataformas intermediarias.",
       tech: ["React 18", "Vite", "Tailwind CSS", "WhatsApp API", "Mobile-First"],
       highlights: [
-        "Reserva de mesa personalizada enviada a WhatsApp",
-        "Carta interactiva por categorías y alérgenos",
-        "Compilación y carga ultra-rápida (<250ms)"
+        "Reservas directas al WhatsApp del local",
+        "Filtro de alérgenos según normativa europea",
+        "Carga instantánea y pensada para móviles"
       ],
       github: "https://github.com/barbadodev/starter-restaurante",
       demo: "#",
@@ -88,15 +88,15 @@ export const PORTFOLIO_CONFIG = {
     },
     {
       id: "starter-pyme",
-      title: "Dental Córdoba — Portal de Captación para Negocios",
-      badge: "Web Comercial Local",
-      type: "Landing & Generador de Leads",
-      description: "Plantilla web de alta conversión para clínicas, gimnasios y negocios locales. Incluye widget de apertura en directo (*Abierto ahora*), opiniones verificadas estilo Google Maps 4.9⭐ y formulario de solicitud de presupuesto con redirección instantánea.",
-      tech: ["React 18", "Vite", "Tailwind CSS", "Google Maps Embed", "SEO Local"],
+      title: "Dental Córdoba — Portal de Captación Local",
+      badge: "Iniciativa para PYMEs",
+      type: "Landing & Solicitud de Citas",
+      description: "Demostración de web comercial orientada a clínicas o talleres locales. Integra cálculo en tiempo real de apertura comercial (Abierto ahora / Cerrado), opiniones de Google y botón rápido para solicitar cita o presupuesto por WhatsApp.",
+      tech: ["React 18", "Vite", "Tailwind CSS", "Google Maps Embed", "SEO Básico"],
       highlights: [
-        "Detector inteligente de horario en tiempo real",
-        "Conversión directa con botón flotante de WhatsApp",
-        "Personalización modular en 5 minutos para cualquier pyme"
+        "Cálculo automático de horario comercial en vivo",
+        "Botón directo de WhatsApp para pedir cita",
+        "Estructura limpia y fácil de personalizar"
       ],
       github: "https://github.com/barbadodev/starter-pyme",
       demo: "#",
@@ -107,24 +107,24 @@ export const PORTFOLIO_CONFIG = {
 
   services: [
     {
-      title: "Desarrollo Web a Medida",
-      description: "Diseño y desarrollo de sitios y aplicaciones web completas con React, Vite y Tailwind CSS. Código limpio, semántico, responsive y optimizado para Google.",
+      title: "Desarrollo Frontend con React & Tailwind",
+      description: "Creación de interfaces web limpias, modernas y adaptadas a teléfonos móviles utilizando las tecnologías aprendidas en el ciclo.",
       icon: "Code"
     },
     {
-      title: "Backend, APIs y Bases de Datos",
-      description: "Creación de arquitecturas RESTful escalables con Node.js, Express y bases de datos relacionales PostgreSQL / Supabase con autenticación segura.",
+      title: "Lógica Backend & APIs REST",
+      description: "Conexión de aplicaciones a servidores Node.js con Express y gestión de bases de datos relacionales PostgreSQL / Supabase.",
       icon: "Server"
     },
     {
-      title: "Digitalización para Negocios Locales",
-      description: "Portales de captación para pymes, cartas interactivas para hostelería y sistemas de reserva directa a WhatsApp sin comisiones abusivas.",
-      icon: "Store"
+      title: "Desarrollo Acelerado con IA",
+      description: "Uso diario y apasionado de asistentes de inteligencia artificial para investigar, optimizar código y entregar soluciones funcionales en menos tiempo.",
+      icon: "Bot"
     },
     {
-      title: "Automatización & Sincronización",
-      description: "Integración de calendarios (iCal/Moodle), automatización de tareas en segundo plano y notificaciones Push personalizadas.",
-      icon: "RefreshCw"
+      title: "Digitalización Práctica para Comercios",
+      description: "Ayudo a pequeños comercios y autónomos a tener presencia web real, cartas digitales y contacto directo a WhatsApp sin complicaciones técnicas.",
+      icon: "Store"
     }
   ]
 };

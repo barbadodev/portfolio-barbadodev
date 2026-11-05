@@ -50,12 +50,12 @@ export default function Hero() {
 
             {/* Título Principal */}
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-              Desarrollo aplicaciones web modernas, rápidas y orientadas a <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-emerald-400 bg-clip-text text-transparent">resultados reales</span>.
+              Estudiante de 2º DAW con pasión por la <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-emerald-400 bg-clip-text text-transparent">Inteligencia Artificial</span> y el software real.
             </h1>
 
             {/* Biografía Técnica */}
             <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Hola, soy <span className="text-white font-semibold">{PORTFOLIO_CONFIG.personal.name}</span>. Creo soluciones digitales combinando la velocidad de <strong className="text-blue-400 font-semibold">React y Tailwind</strong> con la solidez en backend de <strong className="text-emerald-400 font-semibold">Node.js, Express y Supabase</strong>.
+              Hola, soy <span className="text-white font-semibold">{PORTFOLIO_CONFIG.personal.name}</span>. Tengo una base técnica sólida aprendida en DAW y muchas ganas de aprender cada día. No vendo humo: me apasiona la Inteligencia Artificial y la utilizo como multiplicador para programar mejor, investigar rápido y construir soluciones prácticas.
             </p>
 
             {/* Botones de Conversión */}
@@ -64,7 +64,7 @@ export default function Hero() {
                 href="#proyectos"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/25 transition-all hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Ver Proyectos Destacados</span>
+                <span>Ver Proyectos Prácticos</span>
                 <ArrowDown className="w-4 h-4" />
               </a>
 
@@ -93,15 +93,15 @@ export default function Hero() {
             <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400 font-medium">
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                3 proyectos en producción
+                Estudiante de 2º DAW en Córdoba
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-blue-400" />
-                Cero mocks o stubs (100% código real)
+                Ganas continuas de aprender
               </span>
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-indigo-400" />
-                Compilación y testeo automatizado
+                Flujos de trabajo con Inteligencia Artificial
               </span>
             </div>
 
@@ -142,20 +142,22 @@ export default function Hero() {
                 </div>
 
                 <div>
-                  <span className="text-emerald-400">$</span> <span className="text-slate-200">cat stack.json</span>
+                  <span className="text-emerald-400">$</span> <span className="text-slate-200">cat profile.json</span>
                 </div>
                 <pre className="text-slate-400 leading-relaxed overflow-x-auto text-[11px]">
 {`{
-  "focus": "Full-Stack Web Dev",
-  "frontend": ["React", "Tailwind", "Vite"],
-  "backend": ["Node.js", "Express", "iCal"],
-  "database": ["Supabase", "PostgreSQL"],
-  "status": "Available for Work"
+  "student": "Antonio Barbado",
+  "location": "Córdoba, España",
+  "education": "2º DAW (Desarrollo Web)",
+  "mindset": "Fast learner & Ganas de aprender",
+  "ai_passion": "Asistentes de IA & Automatización",
+  "foundation": ["JavaScript", "React", "Node.js", "SQL", "Git"],
+  "goal": "Prácticas de empresa & Proyectos reales"
 }`}
                 </pre>
                 <div className="pt-2 text-slate-500 text-[10px] flex items-center justify-between border-t border-slate-800/60">
                   <span>Git: main* [clean]</span>
-                  <span className="text-emerald-400 font-bold">READY TO DEPLOY</span>
+                  <span className="text-emerald-400 font-bold">READY TO LEARN & BUILD</span>
                 </div>
               </div>
 
